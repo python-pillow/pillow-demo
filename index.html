@@ -3,18 +3,201 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project Makefile</title>
+        <title>Pillow demo for DC/Austin Python Meetups</title>
         <link rel="stylesheet" href="dist/bundle.css">
     </head>
     <div class="reveal">
         <div class="slides">
+            <!-- Slide 1: Title Slide -->
             <section>
-                Slide 1: Draw some circles
+                <div>
+                    <img width="66%" src="img/pillow-logo-light-text.png">
+                </div>
+                <img width="11%" src="img/dcpython-logo.png">
+                <p>Presented to DC Python Meetup & Austin Python Meetup 4/16/24</p>
+                <aside class="notes">
+                    Welcome to the combined DC Python Meetup and Austin Python Meetup. Thank you Jacob for hosting. I am Jeffrey A. Clark or Alex and I'm the creator of Python Pillow.
+                </aside>
             </section>
             <section>
-                Slide 2: Draw the rest of the owl
+                <h3>About Me</h3>
+                <img src="img/sol.gif" width="20%">
+                <p class="fragment">Me circa 1998 🤔</p>
+                <ul>
+                    <li class="fragment">Jeffrey A. Clark</li>
+                    <li class="fragment">Alex</li>
+                    <li class="fragment">Bachelor of Science Computer Science 1998 Loyola University Maryland</li>
+                </ul>
+                <aside class="notes">
+                    We're going to talk about Pillow and a few other important items of interest but first here's a bit about me. Here I am in 1998, three years after the first PIL release.
+                </aside>
             </section>
-        </div>
+            <section>
+                <h3>About Me</h3>
+                <img src="img/slide12.jpg" width="20%">
+                <p class="fragment">Me circa 2008 🤔</p>
+                <ul>
+                    <li class="fragment">Python Pillow Creator 2010</li>
+                    <li class="fragment">
+                        PIL fork author <span class="fragment">(↑same thing)</span>
+                    </li>
+                    <li class="fragment">
+                        Tidelift Lifter 2019 <span class="fragment">($$$ for Pillow)</span>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    Here I am in 2008, two years before the first Pillow release. In 2010 I forked PIL to create Pillow. I've been paid by Tidelift to work on Pillow since 2019.
+                </aside>
+            </section>
+            <section>
+                <h3>About Me</h3>
+                <img src="img/alex-pillow.jpg" width="20%">
+                <p class="fragment">Me circa 2020</p>
+                <ul>
+                    <li class="fragment">
+                        Lifter <span class="fragment">2019</span><span class="fragment"> (actually late 2018)
+                    </li>
+                    <li class="fragment">
+                        Lifter Advocate <span class="fragment">2023</span><span class="fragment">, 2024</span>
+                    </li>
+                    <li class="fragment">
+                    #<span class="fragment">opentowork</span> <span class="fragment">(You should probably hire me.)</a>
+                </li>
+            </ul>
+            <aside class="notes">
+                Here I am in 2020, one year after Pillow funding began. In addition to being a paid Lifter I'm also a Lifter advocate, which means I advocate on behalf of Tidelift to help "pay the maintainers". I am looking for a job.
+            </aside>
+        </section>
+        <section>
+            <img src="img/Tidelift_primary-logo.webp">
+            <p class="fragment" style="font-size: 200px">❤️</p>
+            <p class="fragment">Let's pay the maintainers ✨</p>
+            <aside class="notes">
+                I love Tidelift, especially their business model which I used to call "RedHat for everything but the kernel." But since xz I call it "RedHat for the middle stack." based on a blog post by Luis Villa from Tidelift in which he describes the middle stack.
+            </aside>
+        </section>
+        <section>
+            <img src="img/Tidelift_primary-logo.webp">
+            <p class="fragment" style="font-size: 200px">+</p>
+            <p class="fragment" style="font-size: 200px">xz</p>
+            <aside class="notes">
+            </aside>
+        </section>
+        <section>
+            <p>Let's talk about xz</p>
+            <ul>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://blog.tidelift.com/xz-tidelift-and-paying-the-maintainers">https://blog.tidelift.com/xz-tidelift-and-paying-the-maintainers</a>
+                </li>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://blog.tidelift.com/the-roi-of-paying-open-source-maintainers-in-light-of-xz-utils-backdoor">https://blog.tidelift.com/the-roi-of-paying-open-source-maintainers-in-light-of-xz-utils-backdoor</a>
+                </li>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://blog.tidelift.com/maintainer-panel-hear-from-maintainers-in-a-post-xz-utils-backdoor-world">https://blog.tidelift.com/maintainer-panel-hear-from-maintainers-in-a-post-xz-utils-backdoor-world</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>
+                Let's talk about Pillow
+                <br>
+                <span class="fragment">(Alex's Version)</span>
+            </p>
+            <img class="fragment" src="img/screenshot1.png">
+            <a class="fragment"
+               href="https://github.com/python-pillow/pillow-dcpython">https://github.com/python-pillow/pillow-demo</a>
+            <aside class="notes">
+            </aside>
+        </section>
+        <section>
+            <p>Other Examples</p>
+            <ul>
+                <li class="fragment">
+                    <a target="_blank" href="https://github.com/janbodnar/pillow-examples">https://github.com/janbodnar/pillow-examples</a>
+                </li>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://pillow.readthedocs.io/en/stable/handbook/index.html">https://pillow.readthedocs.io/en/stable/handbook/index.html</a>
+                </li>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://realpython.com/image-processing-with-the-python-pillow-library/">https://realpython.com/image-processing-with-the-python-pillow-library/</a>
+                </li>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/">https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <img width="70%" src="img/screenshot2.png">
+        </section>
+        <section>
+            <img width="70%" src="img/screenshot5.png">
+        </section>
+        <section>
+            <img width="70%" src="img/screenshot3.png">
+        </section>
+        <section>
+            <img width="70%" src="img/screenshot4.png">
+        </section>
+        <section>
+            <p>Example #1 Open image and print info</p>
+            <pre class="fragment">
+<code>
+>>> im = Image.open("hopper.ppm")
+<span class="fragment">>>> print(im.format, im.size, im.mode)</span>
+<span class="fragment">PPM (128, 128) RGB</span>
+</code>
+</pre>
+        </section>
+        <section>
+            <p>Example #2 Rotate image 90 degrees clockwise (270 degrees counter clockwise)</p>
+            <pre class="fragment">
+<code>
+>>> im = Image.open("hopper.ppm")
+<span class="fragment">>>> im = im.rotate(270)</span>
+<span class="fragment">>>> im.save("rotated_hopper.jpg")</span>
+</code>
+</pre>
+            <img class="fragment" src="img/rotated_hopper.jpg">
+        </section>
+        <section>
+            <p>Example #3 Convert to jpeg</p>
+            <pre class="fragment">
+<code>
+>>> im = Image.open("hopper.ppm")
+<span class="fragment">>>> im.save("hopper.jpg")</span>
+<span class="fragment">$ file hopper.jpg</span>
+<span class="fragment">hopper.jpg: JPEG image data, JFIF standard 1.01,
+aspect ratio, density 1x1, segment length 16, baseline,
+precision 8, 128x128, components 3</span>
+</code>
+</pre>
+        </section>
+        <section>
+            <p>Example #4 Create thumbnails</p>
+            <pre class="fragment">
+<code>
+im.thumbnail([64, 64])
+<span class="fragment">>> im.save("thumbnail_hopper.ppm")</span>
+</code>
+</pre>
+        </section>
+        <section>
+            <p>Example #5 Crop image</p>
+            <pre class="fragment">
+<code>
+im = Image.open("hopper.ppm")
+<span class="fragment">>> im = im.crop([0, 0, 64, 64])
+<span class="fragment">>> im.save("cropped_hopper.ppm")
+</code>
+</pre>
+        </section>
     </div>
-    <script src="dist/bundle.js"></script>
+    <script src="dist/bundle.js"></script> <!-- Make sure this path matches your webpack output -->
+</body>
 </html>
