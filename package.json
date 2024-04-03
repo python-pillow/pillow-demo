@@ -1,0 +1,26 @@
+{
+  "name": "pillow-dcpython",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --mode development --port 8000 --static",
+    "watch": "webpack watch --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "css-loader": "^6.11.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "reveal.js": "^5.0.5",
+    "style-loader": "^3.3.4"
+  }
+}
