@@ -120,29 +120,29 @@
                 </li>
                 <li class="fragment">
                     <a target="_blank"
-                       href="https://pillow.readthedocs.io/en/stable/handbook/index.html">https://pillow.readthedocs.io/en/stable/handbook/index.html</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
                        href="https://realpython.com/image-processing-with-the-python-pillow-library/">https://realpython.com/image-processing-with-the-python-pillow-library/</a>
                 </li>
                 <li class="fragment">
                     <a target="_blank"
                        href="https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/">https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/</a>
                 </li>
+                <li class="fragment">
+                    <a target="_blank"
+                       href="https://pillow.readthedocs.io/en/stable/handbook/index.html">https://pillow.readthedocs.io/en/stable/handbook/index.html</a>
+                </li>
             </ul>
-        </section>
-        <section>
-            <img width="70%" src="img/screenshot2.png">
         </section>
         <section>
             <img width="70%" src="img/screenshot5.png">
         </section>
         <section>
-            <img width="70%" src="img/screenshot3.png">
+            <img width="70%" src="img/screenshot2.png">
         </section>
         <section>
             <img width="70%" src="img/screenshot4.png">
+        </section>
+        <section>
+            <img width="70%" src="img/screenshot3.png">
         </section>
         <section>
             <p>Example #1 Open image and print info</p>
@@ -151,8 +151,10 @@
 >>> im = Image.open("hopper.ppm")
 <span class="fragment">>>> print(im.format, im.size, im.mode)</span>
 <span class="fragment">PPM (128, 128) RGB</span>
+<span class="fragment">>>> im.show()</span>
 </code>
 </pre>
+            <img class="fragment" src="hopper.jpg">
         </section>
         <section>
             <p>Example #2 Rotate image 90 degrees clockwise (270 degrees counter clockwise)</p>
@@ -161,9 +163,10 @@
 >>> im = Image.open("hopper.ppm")
 <span class="fragment">>>> im = im.rotate(270)</span>
 <span class="fragment">>>> im.save("rotated_hopper.jpg")</span>
+<span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="img/rotated_hopper.jpg">
+            <img class="fragment" src="rotated_hopper.jpg">
         </section>
         <section>
             <p>Example #3 Convert to jpeg</p>
@@ -183,7 +186,7 @@ precision 8, 128x128, components 3</span>
             <pre class="fragment">
 <code>
 im.thumbnail([64, 64])
-<span class="fragment">>> im.save("thumbnail_hopper.ppm")</span>
+<span class="fragment">>> im.save("thumbnail_hopper.jpg")</span>
 </code>
 </pre>
         </section>
