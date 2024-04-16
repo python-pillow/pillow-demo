@@ -5,6 +5,7 @@ import rich
 from merge import merge
 from roll import roll
 import readline
+import rlcompleter  # noqa
 
 readfunc = readline.parse_and_bind("tab: complete")
 
