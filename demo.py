@@ -64,6 +64,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #6 Pasting image
 # ===============================================================================
 im = Image.open("hopper.ppm")
+region = im.crop([0, 0, 64, 64])
 region = region.transpose(Image.Transpose.ROTATE_180)
 im.paste(region, (0, 0, 64, 64))
 im.save("pasted_hopper.jpg")
