@@ -29,7 +29,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 im = im.rotate(270)
 im.save("rotated_hopper.jpg")
-print("Saved rotated hopper!")
+print("Example #2: Saved rotated hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -38,7 +38,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 im = Image.open("hopper.ppm")
 im.save("hopper.jpg")
-print("Saved jpeg hopper!")
+print("Example #3: Saved jpeg hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -48,7 +48,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im.thumbnail([64, 64])
 im.save("thumbnail_hopper.jpg")
-print("Saved thumbnail hopper!")
+print("Example #4: Saved thumbnail hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -57,7 +57,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 region = im.crop([0, 0, 64, 64])
 region.save("cropped_hopper.jpg")
-print("Saved cropped hopper!")
+print("Example #5: Saved cropped hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -68,7 +68,7 @@ region = im.crop([0, 0, 64, 64])
 region = region.transpose(Image.Transpose.ROTATE_180)
 im.paste(region, (0, 0, 64, 64))
 im.save("pasted_hopper.jpg")
-print("Saved pasted hopper!")
+print("Example #6: Saved pasted hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -77,7 +77,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = roll(im, 64)
 im.save("rolled_hopper.jpg")
-print("Saved rolled hopper!")
+print("Example #7: Saved rolled hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -87,7 +87,7 @@ hopper = Image.open("hopper.ppm")
 alex = Image.open("img/alex-pillow.jpg")
 im = merge(hopper, alex)
 im.save("merged_hopper.png")
-print("Saved merged hopper!")
+print("Example #8: Saved merged hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -100,7 +100,7 @@ im.save("merged_resized_hopper.png")
 im = Image.open("merged_resized_hopper.png")
 im = im.resize([128, 128])
 im.save("merged_resized_hopper.png")
-print("Saved merged and resized hopper!")
+print("Example #8: Saved merged and resized hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -110,7 +110,7 @@ im = Image.open("hopper.ppm")
 r, g, b = im.split()
 im = Image.merge("RGB", (b, g, r))
 im.save("rebanded_hopper.jpg")
-print("Saved rebanded hopper!")
+print("Example #9: Saved rebanded hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -120,7 +120,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.resize([64, 64])
 im.save("resized_hopper.jpg")
-print("Saved resized hopper!")
+print("Example #10: Saved resized hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -130,7 +130,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
 im.save("flip_left_right_hopper.jpg")
-print("Saved flipped hopper!")
+print("Example #11: Saved flipped hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -140,7 +140,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
 im.save("flip_top_bottom_hopper.jpg")
-print("Saved flipped hopper!")
+print("Example #12: Saved flipped hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -150,7 +150,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.ROTATE_90)
 im.save("rotated_hopper_90.jpg")
-print("Saved rotated hopper!")
+print("Example #13: Saved rotated hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -160,7 +160,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.ROTATE_180)
 im.save("rotated_hopper_180.jpg")
-print("Saved rotated hopper!")
+print("Example #14: Saved rotated hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -170,7 +170,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.ROTATE_270)
 im.save("rotated_hopper_270.jpg")
-print("Saved rotated hopper!")
+print("Example #15: Saved rotated hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -179,7 +179,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 im = Image.open("hopper.ppm")
 ImageOps.contain(im, (100, 150)).save("contained_hopper.png")
-print("Saved contained hopper!")
+print("Example #16: Saved contained hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -188,7 +188,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 im = Image.open("hopper.ppm")
 ImageOps.cover(im, (100, 150)).save("covered_hopper.png")
-print("Saved covered hopper!")
+print("Example #17: Saved covered hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -197,7 +197,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 im = Image.open("hopper.ppm")
 ImageOps.fit(im, (100, 150)).save("fitted_hopper.png")
-print("Saved fitted hopper!")
+print("Example #18: Saved fitted hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -206,7 +206,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 im = Image.open("hopper.ppm")
 ImageOps.pad(im, (100, 150), color="#f00").save("padded_hopper.png")
-print("Saved padded hopper!")
+print("Example #19: Saved padded hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -216,7 +216,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.convert("L")
 im.save("converted_hopper.jpg")
-print("Saved converted hopper!")
+print("Example #20: Saved converted hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -226,7 +226,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.filter(ImageFilter.DETAIL)
 im.save("enhanced_hopper.jpg")
-print("Saved enhanced hopper!")
+print("Example #21: Saved enhanced hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -236,7 +236,7 @@ code.interact(local=globals(), readfunc=readfunc)
 im = Image.open("hopper.ppm")
 im = im.point(lambda i: i * 20)
 im.save("transformed_hopper.jpg")
-print("Saved transformed hopper!")
+print("Example #22: Saved transformed hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -256,7 +256,7 @@ source[g].paste(out, None, mask)
 # build a new multiband image
 im = Image.merge(im.mode, source)
 im.save("masked_hopper.jpg")
-print("Saved masked hopper!")
+print("Example #23: Saved masked hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -267,7 +267,7 @@ im = Image.open("hopper.ppm")
 im = ImageEnhance.Contrast(im)
 im = im.enhance(1.3)
 im.save("contrasted_hopper.jpg")
-print("Saved contrasted hopper!")
+print("Example #24: Saved contrasted hopper!")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -279,8 +279,9 @@ im = Image.open("snorkle.gif")
 i = 1
 for frame in ImageSequence.Iterator(im):
     frame.save(f"snorkle_{i}.png")
-    print(f"Saved snorkle frame {i}!")
+    print(f"Example #25: Saved snorkle frame {i}!")
     i += 1
+print("Example #25: Saved all frames.")
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
@@ -296,5 +297,14 @@ ps.image((0, 0, 128, 128), im, 0)
 ps.setfont("HelveticaNarrow-Bold", 36)
 ps.text((0, 0), title)
 ps.end_document()
-print("Saved postscript hopper!")
+print("Example #26: Saved postscript hopper!")
+code.interact(local=globals(), readfunc=readfunc)
+# ===============================================================================
+# Example #27 Reading from an open file
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-an-open-file
+# ===============================================================================
+print("Example #27: Opened hopper.ppm!")
+with open("hopper.ppm", "rb") as fp:
+    im = Image.open(fp)
+    print(im)
 code.interact(local=globals(), readfunc=readfunc)
