@@ -505,15 +505,41 @@ def roll(im, delta):
             <img class="fragment" src="img/screenshot7.png">
         </section>
         <section>
-            <h3>Not Covered ‼️</h3>
-            <p class="fragment">Reading from other sources</p>
+            <h3>More on reading images</h3>
+            <p class="fragment">Example #27: Reading from an open file</p>
             <ul>
                 <li class="fragment">
                     <a target="_blank"
-                       href="https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#more-on-reading-images">https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#more-on-reading-images</a>
+                       href="https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-an-open-file">
                 </li>
             </ul>
+            <pre class="fragment">
+<code>
+# ===============================================================================
+# Example #27 Reading from an open file
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-an-open-file
+# ===============================================================================
+print("Example #27: Opened hopper.ppm!")
+with open("hopper.ppm", "rb") as fp:
+    im = Image.open(fp)
+    print(im)
+# ===============================================================================
+# Example #28 Reading from binary data
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-binary-data
+# ===============================================================================
+buffer = read_image_to_buffer("hopper.ppm")
+print("Example #28: Read to buffer")
+print(type(buffer))
+im = read_image_from_buffer(buffer)
+print("Example #28: Read from buffer")
+print(im)
+code.interact(local=globals(), readfunc=readfunc)
+</code>
         </section>
+
+
+
+
         <section>
             <h3>Not Covered ‼️</h3>
             <p class="fragment">Batch processing</p>
