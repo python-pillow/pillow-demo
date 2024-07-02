@@ -4,6 +4,7 @@ import pprint
 import rich
 from merge import merge
 from roll import roll
+from buffer import read_image_from_buffer, read_image_to_buffer
 import readline
 import rlcompleter  # noqa
 
@@ -307,4 +308,14 @@ print("Example #27: Opened hopper.ppm!")
 with open("hopper.ppm", "rb") as fp:
     im = Image.open(fp)
     print(im)
+# ===============================================================================
+# Example #28 Reading from binary data
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-binary-data
+# ===============================================================================
+buffer = read_image_to_buffer("hopper.ppm")
+print("Example #28: Read to buffer")
+print(type(buffer))
+im = read_image_from_buffer(buffer)
+print("Example #28: Read from buffer")
+print(im)
 code.interact(local=globals(), readfunc=readfunc)

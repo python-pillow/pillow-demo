@@ -2,7 +2,8 @@ PROJECT_NAME := pillow-demo
 GIT_MESSAGE := "Prep for Austin Py"
 
 edit:
-	vi index.html
+	# vi index.html
+	vi demo.py
 
 serve: 
 	$(MAKE) reveal-serve
