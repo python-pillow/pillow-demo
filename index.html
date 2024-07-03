@@ -507,39 +507,26 @@ def roll(im, delta):
         <section>
             <h3>More on reading images</h3>
             <p class="fragment">Example #27: Reading from an open file</p>
-            <ul>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-an-open-file">
-                </li>
-            </ul>
             <pre class="fragment">
 <code>
-# ===============================================================================
-# Example #27 Reading from an open file
-# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-an-open-file
-# ===============================================================================
-print("Example #27: Opened hopper.ppm!")
-with open("hopper.ppm", "rb") as fp:
-    im = Image.open(fp)
-    print(im)
-# ===============================================================================
-# Example #28 Reading from binary data
-# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-binary-data
-# ===============================================================================
-buffer = read_image_to_buffer("hopper.ppm")
-print("Example #28: Read to buffer")
-print(type(buffer))
-im = read_image_from_buffer(buffer)
-print("Example #28: Read from buffer")
-print(im)
-code.interact(local=globals(), readfunc=readfunc)
+>>> with open("hopper.ppm", "rb") as fp:
+<span class="fragment">>>>    im = Image.open(fp)</span>
+<span class="fragment">>>>    print(im)</span>
+<span class="fragment">&lt;PIL.PpmImagePlugin.PpmImageFile image
+    mode=RGB size=128x128 at 0x1055FD940&gt;</span>
 </code>
         </section>
-
-
-
-
+        <section>
+            <h3>More on reading images</h3>
+            <p class="fragment">Example #28: Reading from binary data</p>
+            <pre class="fragment">
+<code>
+buffer = read_image_to_buffer("hopper.ppm")
+<span class="fragment">print(type(buffer))</span>
+<span class="fragment">im = read_image_from_buffer(buffer)</span>
+<span class="fragment">print(im)</span>
+</code>
+        </section>
         <section>
             <h3>Not Covered ‼️</h3>
             <p class="fragment">Batch processing</p>

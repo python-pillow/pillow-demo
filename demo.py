@@ -308,6 +308,7 @@ print("Example #27: Opened hopper.ppm!")
 with open("hopper.ppm", "rb") as fp:
     im = Image.open(fp)
     print(im)
+code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 # Example #28 Reading from binary data
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-binary-data
@@ -315,6 +316,7 @@ with open("hopper.ppm", "rb") as fp:
 buffer = read_image_to_buffer("hopper.ppm")
 print("Example #28: Read to buffer")
 print(type(buffer))
+code.interact(local=globals(), readfunc=readfunc)
 im = read_image_from_buffer(buffer)
 print("Example #28: Read from buffer")
 print(im)
