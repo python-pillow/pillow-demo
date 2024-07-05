@@ -521,10 +521,13 @@ def roll(im, delta):
             <p class="fragment">Example #28: Reading from binary data</p>
             <pre class="fragment">
 <code>
-buffer = read_image_to_buffer("hopper.ppm")
-<span class="fragment">print(type(buffer))</span>
-<span class="fragment">im = read_image_from_buffer(buffer)</span>
-<span class="fragment">print(im)</span>
+>>> buffer = read_image_to_buffer("hopper.ppm")
+<span class="fragment">>>> print(type(buffer))</span>
+<span class="fragment">&lt;class '_io.BytesIO'&gt;</span>
+<span class="fragment">>>> im = read_image_from_buffer(buffer)</span>
+<span class="fragment">>>> print(im)</span>
+<span class="fragment">&lt;PIL.PpmImagePlugin.PpmImageFile image
+    mode=RGB size=128x128 at 0x1058294C0&gt;</span>
 </code>
         </section>
         <section>
