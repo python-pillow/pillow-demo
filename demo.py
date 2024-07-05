@@ -161,7 +161,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #13 Rotate image 90 degrees with transpose
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#transposing-an-image
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #13[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.ROTATE_90)
 im.save("rotated_hopper_90.jpg")
@@ -172,7 +172,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #14 Rotate image 180 degrees with transpose
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#transposing-an-image
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #14[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.ROTATE_180)
 im.save("rotated_hopper_180.jpg")
@@ -183,7 +183,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #15 Rotate image 270 degrees with transpose
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#transposing-an-image
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #15[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = im.transpose(Image.Transpose.ROTATE_270)
 im.save("rotated_hopper_270.jpg")
@@ -194,7 +194,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #16 Relative resize image with contain
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#relative-resizing
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #16[/bold magenta]"))
 im = Image.open("hopper.ppm")
 ImageOps.contain(im, (100, 150)).save("contained_hopper.png")
 print("Example #16: Saved contained hopper!")
@@ -204,7 +204,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #17 Relative resize image with cover
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#relative-resizing
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #17[/bold magenta]"))
 im = Image.open("hopper.ppm")
 ImageOps.cover(im, (100, 150)).save("covered_hopper.png")
 print("Example #17: Saved covered hopper!")
@@ -214,7 +214,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #18 Relative resize image with fit
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#relative-resizing
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #18[/bold magenta]"))
 im = Image.open("hopper.ppm")
 ImageOps.fit(im, (100, 150)).save("fitted_hopper.png")
 print("Example #18: Saved fitted hopper!")
@@ -224,7 +224,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #19 Relative resize image with pad
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#relative-resizing
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #19[/bold magenta]"))
 im = Image.open("hopper.ppm")
 ImageOps.pad(im, (100, 150), color="#f00").save("padded_hopper.png")
 print("Example #19: Saved padded hopper!")
@@ -234,7 +234,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #20 Convert mode
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#converting-between-modes
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #20[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = im.convert("L")
 im.save("converted_hopper.jpg")
@@ -245,7 +245,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #21 Image enhancement
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#image-enhancement
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #21[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = im.filter(ImageFilter.DETAIL)
 im.save("enhanced_hopper.jpg")
@@ -256,7 +256,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #22 Point operations
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#point-operations
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #22[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = im.point(lambda i: i * 20)
 im.save("transformed_hopper.jpg")
@@ -267,7 +267,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #23 Process bands
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#processing-individual-bands
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #23[/bold magenta]"))
 im = Image.open("hopper.ppm")
 # split the image into individual bands
 source = im.split()
@@ -288,7 +288,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #24 Enhance image
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#enhancement
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #24[/bold magenta]"))
 im = Image.open("hopper.ppm")
 im = ImageEnhance.Contrast(im)
 im = im.enhance(1.3)
@@ -301,7 +301,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#image-sequences
 # https://github.com/aclark4life/snorkle-gif
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #25[/bold magenta]"))
 im = Image.open("snorkle.gif")
 i = 1
 for frame in ImageSequence.Iterator(im):
@@ -315,7 +315,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #26 Print postscript
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#postscript-printing
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #26[/bold magenta]"))
 im = Image.open("hopper.ppm")
 title = "hopper"
 fp = open("postscript_hopper.ps", "wb")
@@ -327,21 +327,23 @@ ps.text((0, 0), title)
 ps.end_document()
 print("Example #26: Saved postscript hopper!")
 code.interact(local=globals(), readfunc=readfunc)
+
 # ===============================================================================
 # Example #27 Reading from an open file
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-an-open-file
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #27[/bold magenta]"))
 print("Example #27: Opened hopper.ppm!")
 with open("hopper.ppm", "rb") as fp:
     im = Image.open(fp)
     print(im)
 code.interact(local=globals(), readfunc=readfunc)
+
 # ===============================================================================
 # Example #28 Reading from binary data
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-from-binary-data
 # ===============================================================================
-console.print(Rule("[bold magenta]Example[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #28[/bold magenta]"))
 buffer = read_image_to_buffer("hopper.ppm")
 print("Example #28: Read to buffer")
 print(type(buffer))
