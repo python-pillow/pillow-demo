@@ -422,3 +422,11 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #30
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-in-draft-mode
 # ===============================================================================
+console.print(Rule("[bold magenta]Example #30[/bold magenta]"))
+print("Example #30: Opening hopper.jpg in draft mode!")
+with Image.open("hopper.jpg") as im:
+    print("original =", im.mode, im.size)
+    im.draft("L", (100, 100))
+    print("draft =", im.mode, im.size)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
