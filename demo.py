@@ -398,6 +398,6 @@ if not os.path.isdir("batch"):
     print("Creating batch/")
     os.mkdir("batch")
 for path in paths:
-    image = os.path.join("batch", path[:-4] + ".jpg")
+    image = os.path.join("batch", "".join([path[:-4], ".jpg"]))
     print(image)
     compress_image(path, image)
