@@ -537,11 +537,28 @@ def roll(im, delta):
             <p class="fragment">Batch processing</p>
             <pre class="fragment">
 <code>
+>>> import glob
 >>> paths = glob.glob("*.png")
 <span class="fragment">>>> for path in paths:</span>
 <span class="fragment">>>>     image = os.path.join(</span>
 <span class="fragment">>>>        "batch",</span>
 <span class="fragment">           "".join([path[:-4], ".jpg"])</span>
+<span class="fragment">           )</span>
+<span class="fragment">>>>     compress_image(path, image)</span>
+</code>
+</pre>
+        </section>
+        <section>
+            <h3>More on reading images</h3>
+            <p class="fragment">Batch processing with pathlib</p>
+            <pre class="fragment">
+<code>
+>>> from pathlib import Path
+>>> paths = Path(".").glob("*.png")
+<span class="fragment">>>> for path in paths:</span>
+<span class="fragment">>>>     image = os.path.join(</span>
+<span class="fragment">>>>        "batch",</span>
+<span class="fragment">           "".join([path.stem, ".jpg"])</span>
 <span class="fragment">           )</span>
 <span class="fragment">>>>     compress_image(path, image)</span>
 </code>
