@@ -6,6 +6,7 @@ from merge import merge
 from roll import roll
 from batch import compress_image
 from buffer import read_image_from_buffer, read_image_to_buffer
+from pathlib import Path
 import glob
 import os
 import readline
@@ -401,3 +402,23 @@ for path in paths:
     image = os.path.join("batch", "".join([path[:-4], ".jpg"]))
     print(image)
     compress_image(path, image)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #29 Batch processing
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #29[/bold magenta]"))
+paths = Path(".").glob("*.png")
+for path in paths:
+    image = os.path.join("batch", "".join([path.stem, ".jpg"]))
+    print(image)
+    compress_image(path, image)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #30 
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-in-draft-mode
+# ===============================================================================
