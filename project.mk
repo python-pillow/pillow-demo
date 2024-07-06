@@ -27,3 +27,6 @@ show:
 
 bands:
 	python concepts/bands.py
+
+mode:
+	python concepts/mode.py
