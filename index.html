@@ -567,6 +567,13 @@ def roll(im, delta):
         <section>
             <h3>Controlling the decoder</h3>
             <p class="fragment">Reading in draft mode</p>
+            <pre class="fragment">
+<code>
+>>> with Image.open("hopper.jpg") as im:
+<span class="fragment">>>>    im.draft("L", (100, 100))</span>
+<span class="fragment">>>>    im.draft("L", (100, 100))</span>
+</code>
+</pre>
         </section>
         <section>
             <h3>Also check out</h3>
