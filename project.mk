@@ -20,7 +20,10 @@ logo:
 logo-fancy:
 	python logo_fancy.py
 
+fancy: logo-fancy
+
 show:
 	python show.py
 
-fancy: logo-fancy
+bands:
+	python concepts/bands.py
