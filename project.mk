@@ -20,4 +20,7 @@ logo:
 logo-fancy:
 	python logo_fancy.py
 
+show:
+	python show.py
+
 fancy: logo-fancy
