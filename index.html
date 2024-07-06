@@ -570,7 +570,9 @@ def roll(im, delta):
             <pre class="fragment">
 <code>
 >>> with Image.open("hopper.jpg") as im:
+<span class="fragment">>>>    print("original =", im.mode, im.size)</span>
 <span class="fragment">>>>    im.draft("L", (100, 100))</span>
+<span class="fragment">>>>    print("draft =", im.mode, im.size)</span>
 <span class="fragment">original = RGB (128, 128)</span>
 <span class="fragment">draft = L (128, 128)</span>
 </code>
