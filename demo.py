@@ -419,6 +419,6 @@ console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
-# Example #30 
+# Example #30
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#reading-in-draft-mode
 # ===============================================================================
