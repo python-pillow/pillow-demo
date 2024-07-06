@@ -33,3 +33,6 @@ mode:
 
 size:
 	python concepts/size.py
+
+info:
+	python concepts/info.py
