@@ -30,3 +30,6 @@ bands:
 
 mode:
 	python concepts/mode.py
+
+size:
+	python concepts/size.py
