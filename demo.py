@@ -393,10 +393,10 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #29[/bold magenta]"))
-paths = glob.glob("*.png")
 if not os.path.isdir("batch"):
     print("Creating batch/")
     os.mkdir("batch")
+paths = glob.glob("*.png")
 for path in paths:
     image = os.path.join("batch", "".join([path[:-4], ".jpg"]))
     print(image)
