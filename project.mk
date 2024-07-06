@@ -16,3 +16,8 @@ deploy:
 
 logo:
 	python logo.py
+
+logo-fancy:
+	python logo_fancy.py
+
+fancy: logo-fancy
