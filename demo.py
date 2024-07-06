@@ -392,8 +392,12 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #29 Batch processing
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
 # ===============================================================================
+console.print(Rule("[bold magenta]Example #29[/bold magenta]"))
 paths = glob.glob("*.png")
 if not os.path.isdir("batch"):
+    print("Creating batch/")
     os.mkdir("batch")
 for path in paths:
-    compress_image(path, "batch/" + path[:-4] + ".jpg")
+    image = os.path.join("batch", path[:-4] + ".jpg")
+    print(image)
+    compress_image(path, image)
