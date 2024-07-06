@@ -7,6 +7,7 @@ from roll import roll
 from batch import compress_image
 from buffer import read_image_from_buffer, read_image_to_buffer
 import glob
+import os
 import readline
 import rlcompleter  # noqa
 
@@ -391,3 +392,8 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #29 Batch processing
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
 # ===============================================================================
+paths = glob.glob("*.png")
+if not os.path.isdir("batch"):
+    os.mkdir("batch")
+for path in paths:
+    compress_image(path, "batch/" + path[:-4] + ".jpg")
