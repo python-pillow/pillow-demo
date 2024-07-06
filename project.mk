@@ -13,3 +13,6 @@ install:
 
 deploy:
 	python demo.py
+
+logo:
+	python logo.py
