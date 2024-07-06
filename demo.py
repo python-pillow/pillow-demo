@@ -4,7 +4,9 @@ from rich.console import Console
 from rich.rule import Rule
 from merge import merge
 from roll import roll
+from batch import compress_image
 from buffer import read_image_from_buffer, read_image_to_buffer
+import glob
 import readline
 import rlcompleter  # noqa
 
@@ -384,3 +386,8 @@ print("Example #28: Read from buffer")
 print(im)
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #29 Batch processing
+# https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
+# ===============================================================================
