@@ -6,122 +6,123 @@
         <title>Pillow demo for DC/Austin Python Meetups</title>
         <link rel="stylesheet" href="dist/bundle.css">
     </head>
-    <div class="reveal">
-        <div class="slides">
-            <!-- Slide 1: Title Slide -->
-            <section>
-                <div>
-                    <img width="66%" src="img/pillow-logo-light-text.png">
-                </div>
-                <p>Presented to Austin Python Meetup 07/10/24</p>
-                <aside class="notes">
-                    Welcome to the Austin Python Meetup. My name is Alex unless you are a government form, in which case I am Jeffrey A. Clark.
-                </aside>
-            </section>
-            <section>
-                <h3>About Me</h3>
-                <img src="img/sol.gif" width="20%">
-                <p class="fragment">Me circa 1998 🤔</p>
-                <ul>
-                    <li class="fragment">Jeffrey A. Clark</li>
-                    <li class="fragment">Alex</li>
-                    <li class="fragment">Bachelor of Science Computer Science 1998 Loyola University Maryland</li>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- Slide 1: Title Slide -->
+                <section>
+                    <div>
+                        <img width="66%" src="img/pillow-logo-light-text.png">
+                    </div>
+                    <p>Presented to Austin Python Meetup 07/10/24</p>
+                    <aside class="notes">
+                        Welcome to the Austin Python Meetup. My name is Alex unless you are a government form, in which case I am Jeffrey A. Clark.
+                    </aside>
+                </section>
+                <section>
+                    <h3>About Me</h3>
+                    <img src="img/sol.gif" width="20%">
+                    <p class="fragment">Me circa 1998 🤔</p>
+                    <ul>
+                        <li class="fragment">Jeffrey A. Clark</li>
+                        <li class="fragment">Alex</li>
+                        <li class="fragment">Bachelor of Science Computer Science 1998 Loyola University Maryland</li>
+                    </ul>
+                    <aside class="notes">
+                        We're going to talk about Pillow but first here's a bit about me. Here I am in 1998, three years after the first PIL release.
+                    </aside>
+                </section>
+                <section>
+                    <h3>About Me</h3>
+                    <img src="img/slide12.jpg" width="20%">
+                    <p class="fragment">Me circa 2008 🤔</p>
+                    <ul>
+                        <li class="fragment">Python Pillow Creator 2010</li>
+                        <li class="fragment">
+                            PIL fork author <span class="fragment">(↑same thing)</span>
+                        </li>
+                        <li class="fragment">
+                            Tidelift Lifter 2019 <span class="fragment">($$$ for Pillow)</span>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        Here I am in 2008, two years before the first Pillow release. In 2010 I forked PIL to create Pillow. I've been paid by Tidelift to work on Pillow since 2019.
+                    </aside>
+                </section>
+                <section>
+                    <h3>About Me</h3>
+                    <img src="img/alex-pillow.jpg" width="20%">
+                    <p class="fragment">Me circa 2020</p>
+                    <ul>
+                        <li class="fragment">
+                            Lifter <span class="fragment">2019</span><span class="fragment"> (actually late 2018)
+                        </li>
+                        <li class="fragment">
+                            Lifter Advocate <span class="fragment">2023</span><span class="fragment">, 2024</span>
+                        </li>
+                        <li class="fragment">
+                            <span class="fragment">#opentowork</span> <span class="fragment">(You should probably hire me.)</a>
+                    </li>
                 </ul>
                 <aside class="notes">
-                    We're going to talk about Pillow but first here's a bit about me. Here I am in 1998, three years after the first PIL release.
+                    Here I am in 2020, one year after Pillow funding began. In addition to being a paid Lifter I'm also a Lifter advocate, which means I advocate on behalf of Tidelift to help "pay the maintainers". I am looking for a job.
                 </aside>
             </section>
             <section>
-                <h3>About Me</h3>
-                <img src="img/slide12.jpg" width="20%">
-                <p class="fragment">Me circa 2008 🤔</p>
+                <img src="img/Tidelift_primary-logo.webp">
+                <p class="fragment" style="font-size: 200px">❤️</p>
+                <p class="fragment">Let's pay the maintainers ✨</p>
+                <aside class="notes">
+                    I love Tidelift, especially their business model which I used to call "RedHat for everything but the kernel." But since xz I call it "RedHat for the middle stack." based on a blog post by Luis Villa from Tidelift in which he describes the middle stack.
+                </aside>
+            </section>
+            <section>
+                <p>
+                    Let's talk about Pillow
+                    <br>
+                    <span class="fragment">(Alex's Version)</span>
+                </p>
+                <img class="fragment" src="img/screenshot1.png">
+                <a class="fragment"
+                   href="https://github.com/python-pillow/pillow-dcpython">https://github.com/python-pillow/pillow-demo</a>
+                <aside class="notes">
+                </aside>
+            </section>
+            <section>
+                <p>Other Examples</p>
                 <ul>
-                    <li class="fragment">Python Pillow Creator 2010</li>
                     <li class="fragment">
-                        PIL fork author <span class="fragment">(↑same thing)</span>
+                        <a target="_blank" href="https://github.com/janbodnar/pillow-examples">https://github.com/janbodnar/pillow-examples</a>
                     </li>
                     <li class="fragment">
-                        Tidelift Lifter 2019 <span class="fragment">($$$ for Pillow)</span>
+                        <a target="_blank"
+                           href="https://realpython.com/image-processing-with-the-python-pillow-library/">https://realpython.com/image-processing-with-the-python-pillow-library/</a>
+                    </li>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/">https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/</a>
+                    </li>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://pillow.readthedocs.io/en/stable/handbook/index.html">https://pillow.readthedocs.io/en/stable/handbook/index.html</a>
                     </li>
                 </ul>
-                <aside class="notes">
-                    Here I am in 2008, two years before the first Pillow release. In 2010 I forked PIL to create Pillow. I've been paid by Tidelift to work on Pillow since 2019.
-                </aside>
             </section>
             <section>
-                <h3>About Me</h3>
-                <img src="img/alex-pillow.jpg" width="20%">
-                <p class="fragment">Me circa 2020</p>
-                <ul>
-                    <li class="fragment">
-                        Lifter <span class="fragment">2019</span><span class="fragment"> (actually late 2018)
-                    </li>
-                    <li class="fragment">
-                        Lifter Advocate <span class="fragment">2023</span><span class="fragment">, 2024</span>
-                    </li>
-                    <li class="fragment">
-                        <span class="fragment">#opentowork</span> <span class="fragment">(You should probably hire me.)</a>
-                </li>
-            </ul>
-            <aside class="notes">
-                Here I am in 2020, one year after Pillow funding began. In addition to being a paid Lifter I'm also a Lifter advocate, which means I advocate on behalf of Tidelift to help "pay the maintainers". I am looking for a job.
-            </aside>
-        </section>
-        <section>
-            <img src="img/Tidelift_primary-logo.webp">
-            <p class="fragment" style="font-size: 200px">❤️</p>
-            <p class="fragment">Let's pay the maintainers ✨</p>
-            <aside class="notes">
-                I love Tidelift, especially their business model which I used to call "RedHat for everything but the kernel." But since xz I call it "RedHat for the middle stack." based on a blog post by Luis Villa from Tidelift in which he describes the middle stack.
-            </aside>
-        </section>
-        <section>
-            <p>
-                Let's talk about Pillow
-                <br>
-                <span class="fragment">(Alex's Version)</span>
-            </p>
-            <img class="fragment" src="img/screenshot1.png">
-            <a class="fragment"
-               href="https://github.com/python-pillow/pillow-dcpython">https://github.com/python-pillow/pillow-demo</a>
-            <aside class="notes">
-            </aside>
-        </section>
-        <section>
-            <p>Other Examples</p>
-            <ul>
-                <li class="fragment">
-                    <a target="_blank" href="https://github.com/janbodnar/pillow-examples">https://github.com/janbodnar/pillow-examples</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://realpython.com/image-processing-with-the-python-pillow-library/">https://realpython.com/image-processing-with-the-python-pillow-library/</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/">https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://pillow.readthedocs.io/en/stable/handbook/index.html">https://pillow.readthedocs.io/en/stable/handbook/index.html</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <img width="70%" src="img/screenshot5.png">
-        </section>
-        <section>
-            <img width="70%" src="img/screenshot2.png">
-        </section>
-        <section>
-            <img width="70%" src="img/screenshot4.png">
-        </section>
-        <section>
-            <img width="70%" src="img/screenshot3.png">
-        </section>
-        <section>
-            <p>Example #1 Open image and print info</p>
-            <pre class="fragment">
+                <img width="70%" src="img/screenshot5.png">
+            </section>
+            <section>
+                <img width="70%" src="img/screenshot2.png">
+            </section>
+            <section>
+                <img width="70%" src="img/screenshot4.png">
+            </section>
+            <section>
+                <img width="70%" src="img/screenshot3.png">
+            </section>
+            <section>
+                <p>Example #1 Open image and print info</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -130,11 +131,11 @@
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="hopper.jpg">
-        </section>
-        <section>
-            <p>Example #2 Rotate image 90 degrees clockwise (270 degrees counter clockwise)</p>
-            <pre class="fragment">
+                <img class="fragment" src="hopper.jpg">
+            </section>
+            <section>
+                <p>Example #2 Rotate image 90 degrees clockwise (270 degrees counter clockwise)</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -143,11 +144,11 @@
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="rotated_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #3 Convert to jpeg</p>
-            <pre class="fragment">
+                <img class="fragment" src="rotated_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #3 Convert to jpeg</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -158,10 +159,10 @@ aspect ratio, density 1x1, segment length 16, baseline,
 precision 8, 128x128, components 3</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <p>Example #4 Create thumbnails</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <p>Example #4 Create thumbnails</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -170,11 +171,11 @@ precision 8, 128x128, components 3</span>
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="thumbnail_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #5 Crop image</p>
-            <pre class="fragment">
+                <img class="fragment" src="thumbnail_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #5 Crop image</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -183,11 +184,11 @@ precision 8, 128x128, components 3</span>
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="cropped_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #6 Pasting image</p>
-            <pre class="fragment">
+                <img class="fragment" src="cropped_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #6 Pasting image</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -197,11 +198,11 @@ precision 8, 128x128, components 3</span>
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="pasted_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #7 Roll image</p>
-            <pre class="fragment">
+                <img class="fragment" src="pasted_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #7 Roll image</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> from roll import roll</span>
@@ -211,11 +212,11 @@ precision 8, 128x128, components 3</span>
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="rolled_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #7 roll.py</p>
-            <pre class="fragment">
+                <img class="fragment" src="rolled_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #7 roll.py</p>
+                <pre class="fragment">
 <code>
 def roll(im, delta):
     """Roll an image sideways."""
@@ -230,10 +231,10 @@ def roll(im, delta):
     return im
 </code>
 </pre>
-        </section>
-        <section>
-            <p>Example #8 Merge images</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <p>Example #8 Merge images</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> hopper = Image.open("hopper.jpg")</span>
@@ -243,11 +244,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="merged_hopper.png">
-        </section>
-        <section>
-            <p>Example #8 Merge images (and resize)</p>
-            <pre class="fragment">
+                <img class="fragment" src="merged_hopper.png">
+            </section>
+            <section>
+                <p>Example #8 Merge images (and resize)</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> hopper = Image.open("hopper.jpg")</span>
@@ -260,11 +261,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="merged_resized_hopper.png">
-        </section>
-        <section>
-            <p>Example #9 Split and merge bands</p>
-            <pre class="fragment">
+                <img class="fragment" src="merged_resized_hopper.png">
+            </section>
+            <section>
+                <p>Example #9 Split and merge bands</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> r, g, b = im.split()</span>
@@ -273,11 +274,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="rebanded_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #10 Create JPEG thumbnail with resize</p>
-            <pre class="fragment">
+                <img class="fragment" src="rebanded_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #10 Create JPEG thumbnail with resize</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.resize([64, 64])
@@ -285,11 +286,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="resized_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #11 Transpose image left to right</p>
-            <pre class="fragment">
+                <img class="fragment" src="resized_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #11 Transpose image left to right</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
@@ -297,11 +298,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="flip_left_right_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #12 Transpose image top to bottom</p>
-            <pre class="fragment">
+                <img class="fragment" src="flip_left_right_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #12 Transpose image top to bottom</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
@@ -309,11 +310,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="flip_top_bottom_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #13 Rotate image 90 degrees with transpose</p>
-            <pre class="fragment">
+                <img class="fragment" src="flip_top_bottom_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #13 Rotate image 90 degrees with transpose</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.transpose(Image.Transpose.ROTATE_90)</span>
@@ -321,11 +322,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="rotated_hopper_90.jpg">
-        </section>
-        <section>
-            <p>Example #14 Rotate image 180 degrees with transpose</p>
-            <pre class="fragment">
+                <img class="fragment" src="rotated_hopper_90.jpg">
+            </section>
+            <section>
+                <p>Example #14 Rotate image 180 degrees with transpose</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.transpose(Image.Transpose.ROTATE_180)</span>
@@ -333,11 +334,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="rotated_hopper_180.jpg">
-        </section>
-        <section>
-            <p>Example #15 Rotate image 270 degrees with transpose</p>
-            <pre class="fragment">
+                <img class="fragment" src="rotated_hopper_180.jpg">
+            </section>
+            <section>
+                <p>Example #15 Rotate image 270 degrees with transpose</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.transpose(Image.Transpose.ROTATE_270)</span>
@@ -345,11 +346,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="rotated_hopper_270.jpg">
-        </section>
-        <section>
-            <p>Example #16 Relative resize image with contain</p>
-            <pre class="fragment">
+                <img class="fragment" src="rotated_hopper_270.jpg">
+            </section>
+            <section>
+                <p>Example #16 Relative resize image with contain</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageOps
 <span class="fragment">>>> ImageOps.contain(im, (100, 150)).save(</span>
@@ -359,11 +360,11 @@ def roll(im, delta):
 100 x 100, 8-bit/color RGB, non-interlaced</span>
 </code>
 </pre>
-            <img class="fragment" src="contained_hopper.png">
-        </section>
-        <section>
-            <p>Example #17 Relative resize image with cover</p>
-            <pre class="fragment">
+                <img class="fragment" src="contained_hopper.png">
+            </section>
+            <section>
+                <p>Example #17 Relative resize image with cover</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageOps
 <span class="fragment">>>> ImageOps.cover(im, (100, 150)).save("covered_hopper.png")</span>
@@ -372,11 +373,11 @@ def roll(im, delta):
 150 x 150, 8-bit/color RGB, non-interlaced</span>
 </code>
 </pre>
-            <img class="fragment" src="covered_hopper.png">
-        </section>
-        <section>
-            <p>Example #18 Relative resize image with fit</p>
-            <pre class="fragment">
+                <img class="fragment" src="covered_hopper.png">
+            </section>
+            <section>
+                <p>Example #18 Relative resize image with fit</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageOps
 <span class="fragment">>>> ImageOps.fit(im, (100, 150)).save("fitted_hopper.png")</span>
@@ -385,11 +386,11 @@ def roll(im, delta):
 100 x 150, 8-bit/color RGB, non-interlaced</span>
 </code>
 </pre>
-            <img class="fragment" src="fitted_hopper.png">
-        </section>
-        <section>
-            <p>Example #19 Relative resize image with pad</p>
-            <pre class="fragment">
+                <img class="fragment" src="fitted_hopper.png">
+            </section>
+            <section>
+                <p>Example #19 Relative resize image with pad</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageOps
 <span class="fragment">>>> ImageOps.pad(im, (100, 150), color="#f00").save("padded_hopper.png")</span>
@@ -398,11 +399,11 @@ def roll(im, delta):
 100 x 150, 8-bit/color RGB, non-interlaced</span>
 </code>
 </pre>
-            <img class="fragment" src="padded_hopper.png">
-        </section>
-        <section>
-            <p>Example #20 Convert mode</p>
-            <pre class="fragment">
+                <img class="fragment" src="padded_hopper.png">
+            </section>
+            <section>
+                <p>Example #20 Convert mode</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = Image.open("hopper.ppm")</span>
@@ -411,11 +412,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="converted_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #21 Image enhancement</p>
-            <pre class="fragment">
+                <img class="fragment" src="converted_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #21 Image enhancement</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageFilter
 <span class="fragment">>>> im = im.filter(ImageFilter.DETAIL)</span>
@@ -423,11 +424,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="enhanced_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #22 Point operations</p>
-            <pre class="fragment">
+                <img class="fragment" src="enhanced_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #22 Point operations</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> im = im.point(lambda i: i * 20)</span>
@@ -435,11 +436,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="transformed_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #23 Process bands</p>
-            <pre class="fragment">
+                <img class="fragment" src="transformed_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #23 Process bands</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import Image
 <span class="fragment">>>> source = im.split()</span>
@@ -452,11 +453,11 @@ def roll(im, delta):
 <span class="fragment">>>> print("Saved masked hopper!")</span>
 </code>
 </pre>
-            <img class="fragment" src="masked_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #24 Enhance image</p>
-            <pre class="fragment">
+                <img class="fragment" src="masked_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #24 Enhance image</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageEnhance
 <span class="fragment">>>> im = ImageEnhance.Contrast(im)</span>
@@ -465,11 +466,11 @@ def roll(im, delta):
 <span class="fragment">>>> im.show()</span>
 </code>
 </pre>
-            <img class="fragment" src="contrasted_hopper.jpg">
-        </section>
-        <section>
-            <p>Example #25 Image sequences</p>
-            <pre class="fragment">
+                <img class="fragment" src="contrasted_hopper.jpg">
+            </section>
+            <section>
+                <p>Example #25 Image sequences</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import ImageSequence
 <span class="fragment">>>> im = Image.open("snorkle.gif")</span>
@@ -480,11 +481,11 @@ def roll(im, delta):
 <span class="fragment">>>>     i += 1</span>
 </code>
 </pre>
-            <img class="fragment" src="snorkle.gif">
-        </section>
-        <section>
-            <p>Example #26 Postscript</p>
-            <pre class="fragment">
+                <img class="fragment" src="snorkle.gif">
+            </section>
+            <section>
+                <p>Example #26 Postscript</p>
+                <pre class="fragment">
 <code>
 >>> from PIL import PSDraw
 <span class="fragment">>>> title = "hopper"</span>
@@ -499,15 +500,15 @@ def roll(im, delta):
 <span class="fragment">convert postscript_hopper.ps postscript_hopper.pdf</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <p>Example #26 Postscript</p>
-            <img class="fragment" src="img/screenshot7.png">
-        </section>
-        <section>
-            <h3>More on reading images</h3>
-            <p class="fragment">Example #27: Reading from an open file</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <p>Example #26 Postscript</p>
+                <img class="fragment" src="img/screenshot7.png">
+            </section>
+            <section>
+                <h3>More on reading images</h3>
+                <p class="fragment">Example #27: Reading from an open file</p>
+                <pre class="fragment">
 <code>
 >>> with open("hopper.ppm", "rb") as fp:
 <span class="fragment">>>>    im = Image.open(fp)</span>
@@ -516,11 +517,11 @@ def roll(im, delta):
     mode=RGB size=128x128 at 0x1055FD940&gt;</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <h3>More on reading images</h3>
-            <p class="fragment">Example #28: Reading from binary data</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <h3>More on reading images</h3>
+                <p class="fragment">Example #28: Reading from binary data</p>
+                <pre class="fragment">
 <code>
 >>> buffer = read_image_to_buffer("hopper.ppm")
 <span class="fragment">>>> print(type(buffer))</span>
@@ -531,11 +532,11 @@ def roll(im, delta):
     mode=RGB size=128x128 at 0x1058294C0&gt;</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <h3>More on reading images</h3>
-            <p class="fragment">Batch processing</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <h3>More on reading images</h3>
+                <p class="fragment">Batch processing</p>
+                <pre class="fragment">
 <code>
 >>> import glob
 >>> paths = glob.glob("*.png")
@@ -547,11 +548,11 @@ def roll(im, delta):
 <span class="fragment">>>>     compress_image(path, image)</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <h3>More on reading images</h3>
-            <p class="fragment">Batch processing with pathlib</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <h3>More on reading images</h3>
+                <p class="fragment">Batch processing with pathlib</p>
+                <pre class="fragment">
 <code>
 >>> from pathlib import Path
 >>> paths = Path(".").glob("*.png")
@@ -563,11 +564,11 @@ def roll(im, delta):
 <span class="fragment">>>>     compress_image(path, image)</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <h3>Controlling the decoder</h3>
-            <p class="fragment">Reading in draft mode</p>
-            <pre class="fragment">
+            </section>
+            <section>
+                <h3>Controlling the decoder</h3>
+                <p class="fragment">Reading in draft mode</p>
+                <pre class="fragment">
 <code>
 >>> with Image.open("hopper.jpg") as im:
 <span class="fragment">>>>    print("original =", im.mode, im.size)</span>
@@ -577,30 +578,31 @@ def roll(im, delta):
 <span class="fragment">draft = L (128, 128)</span>
 </code>
 </pre>
-        </section>
-        <section>
-            <h3>Also check out</h3>
-            <ul>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://pillow.readthedocs.io/en/stable/handbook/concepts.html">https://pillow.readthedocs.io/en/stable/handbook/concepts.html</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://github.com/python-pillow/pillow-demo/blob/main/logo.py">https://github.com/python-pillow/pillow-demo/blob/main/logo.py</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://github.com/python-pillow/pillow-demo/blob/main/logo_fancy.py">https://github.com/python-pillow/pillow-demo/blob/main/logo_fancy.py</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://github.com/python-pillow/Pillow/issues/1888">https://github.com/python-pillow/Pillow/issues/1888</a>
-                </li>
-                <li class="fragment">
-                    <a target="_blank"
-                       href="https://pillow.readthedocs.io/en/stable/handbook/appendices.html">https://pillow.readthedocs.io/en/stable/handbook/appendices.html</a>
-                </li>
+            </section>
+            <section>
+                <h3>Also check out</h3>
+                <ul>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://pillow.readthedocs.io/en/stable/handbook/concepts.html">https://pillow.readthedocs.io/en/stable/handbook/concepts.html</a>
+                    </li>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://github.com/python-pillow/pillow-demo/blob/main/logo.py">https://github.com/python-pillow/pillow-demo/blob/main/logo.py</a>
+                    </li>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://github.com/python-pillow/pillow-demo/blob/main/logo_fancy.py">https://github.com/python-pillow/pillow-demo/blob/main/logo_fancy.py</a>
+                    </li>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://github.com/python-pillow/Pillow/issues/1888">https://github.com/python-pillow/Pillow/issues/1888</a>
+                    </li>
+                    <li class="fragment">
+                        <a target="_blank"
+                           href="https://pillow.readthedocs.io/en/stable/handbook/appendices.html">https://pillow.readthedocs.io/en/stable/handbook/appendices.html</a>
+                    </li>
+                </ul>
             </section>
             <section>
                 <h4>Thank you!</h4>
