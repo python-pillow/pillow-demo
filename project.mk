@@ -36,3 +36,6 @@ size:
 
 info:
 	python concepts/info.py
+
+debug:
+	python debug.py
