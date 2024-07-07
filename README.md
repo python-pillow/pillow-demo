@@ -1,3 +1,3 @@
 # pillow-demo
 
-![screenshot](screenshot.png)
+![screenshot](img/screenshot.png)
