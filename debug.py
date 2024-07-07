@@ -1,9 +1,13 @@
 import logging
 from PIL import Image, ImageFilter
 
-# Configure logging
+# Configure logging for your application
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
+
+# Configure logging for Pillow
+pil_logger = logging.getLogger("PIL")
+pil_logger.setLevel(logging.DEBUG)
 
 
 def open_image(file_path):
