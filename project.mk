@@ -12,30 +12,27 @@ install:
 	$(MAKE) pip-install npm-install
 
 deploy:
-	python demo.py
+	python src/demo.py
 
 logo:
-	python logo.py
+	python src/logo.py
 
 logo-fancy:
-	python logo_fancy.py
+	python src/logo_fancy.py
 
 fancy: logo-fancy
 
 show:
-	python show.py
+	python src/show.py
 
 bands:
-	python concepts/bands.py
+	python src/concepts/bands.py
 
 mode:
-	python concepts/mode.py
+	python src/concepts/mode.py
 
 size:
-	python concepts/size.py
+	python src/concepts/size.py
 
 info:
-	python concepts/info.py
-
-debug:
-	python debug.py
+	python src/concepts/info.py
