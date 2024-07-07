@@ -5,6 +5,7 @@ from PIL import Image, ImageFilter
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
+
 def open_image(file_path):
     try:
         logger.debug(f"Opening image from {file_path}")
@@ -14,6 +15,7 @@ def open_image(file_path):
     except Exception as e:
         logger.error(f"Error opening image: {e}")
         raise
+
 
 def apply_filter(img, filter_type):
     try:
@@ -25,6 +27,7 @@ def apply_filter(img, filter_type):
         logger.error(f"Error applying filter: {e}")
         raise
 
+
 def save_image(img, file_path):
     try:
         logger.debug(f"Saving image to {file_path}")
@@ -34,11 +37,12 @@ def save_image(img, file_path):
         logger.error(f"Error saving image: {e}")
         raise
 
+
 if __name__ == "__main__":
     try:
         # Example file paths
-        input_file_path = 'hopper.ppm'
-        output_file_path = 'blurred_hopper.ppm'
+        input_file_path = "hopper.ppm"
+        output_file_path = "blurred_hopper.ppm"
 
         # Open image
         img = open_image(input_file_path)
