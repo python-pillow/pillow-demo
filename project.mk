@@ -22,9 +22,6 @@ logo-fancy:
 
 fancy: logo-fancy
 
-show:
-	python src/show.py
-
 mode:
 	python src/concepts/mode.py
 
