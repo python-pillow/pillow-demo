@@ -433,3 +433,14 @@ with Image.open(os.path.join("img", "hopper.jpg")) as im:
     print("draft =", im.mode, im.size)
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #31
+# https://pillow.readthedocs.io/en/stable/handbook/concepts.html#bands
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #31[/bold magenta]"))
+print("Example #31: Get hopper bands!")
+im = Image.open(os.path.join("img", "hopper.ppm"))
+print(im.getbands())
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
