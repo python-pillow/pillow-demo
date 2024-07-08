@@ -25,9 +25,6 @@ fancy: logo-fancy
 show:
 	python src/show.py
 
-bands:
-	python src/concepts/bands.py
-
 mode:
 	python src/concepts/mode.py
 
