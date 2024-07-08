@@ -444,3 +444,14 @@ im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.getbands())
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #32
+# https://pillow.readthedocs.io/en/stable/handbook/concepts.html#modes
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #31[/bold magenta]"))
+print("Example #32: Get hopper modes!")
+im = Image.open(os.path.join("img", "hopper.ppm"))
+print(im.mode)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
