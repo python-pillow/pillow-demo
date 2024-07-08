@@ -396,12 +396,13 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #29[/bold magenta]"))
-if not os.path.isdir("batch"):
+batch_dir = os.path.join("img", "batch")
+if not os.path.isdir(batch_dir):
     print("Creating batch/")
-    os.mkdir("batch")
-paths = glob.glob("*.png")
+    os.mkdir(batch_dir)
+paths = glob.glob(os.path.join("img", "*.png"))
 for path in paths:
-    image = os.path.join("batch", "".join([path[:-4], ".jpg"]))
+    image = os.path.join("img", "batch", "".join([os.path.basename(path[:-4]), ".jpg"]))
     print(image)
     compress_image(path, image)
 console.print(Rule())
@@ -412,9 +413,9 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#batch-processing
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #29[/bold magenta]"))
-paths = Path(".").glob("*.png")
+paths = Path(".").glob(os.path.join("img", "*.png"))
 for path in paths:
-    image = os.path.join("batch", "".join([path.stem, ".jpg"]))
+    image = os.path.join("img", "batch", "".join([path.stem, ".jpg"]))
     print(image)
     compress_image(path, image)
 console.print(Rule())
