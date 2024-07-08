@@ -466,3 +466,14 @@ im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.size)
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #34
+# https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+print("Example #33: Get hopper info!")
+im = Image.open(os.path.join("img", "hopper.ppm"))
+print(im.info)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
