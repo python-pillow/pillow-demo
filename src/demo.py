@@ -473,11 +473,21 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#coordinate-system
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+import cart
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
 
 # ===============================================================================
 # Example #35
+# https://pillow.readthedocs.io/en/stable/handbook/concepts.html#palette
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+import pal
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #36
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
