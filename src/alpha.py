@@ -17,4 +17,4 @@ overlay_img = transparent_img.resize(background_img.size, Image.BICUBIC)
 # Composite the overlay onto the background
 final_img = Image.alpha_composite(background_img.convert("RGBA"), overlay_img)
 print("Example #37: Writing transparent image!")
-final_img.save("transparent_image.png")
+final_img.save(os.path.join("img", "transparent_image.png"))
