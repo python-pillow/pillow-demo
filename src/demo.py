@@ -514,3 +514,11 @@ console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
 import alpha
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #38
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #38[/bold magenta]"))
+import logo
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)

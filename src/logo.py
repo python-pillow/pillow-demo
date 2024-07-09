@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 # Create a blank image with white background
 width, height = 400, 200
@@ -20,4 +21,5 @@ text_x, text_y = rect_x1 + 20, rect_y0 + 30
 draw.text((text_x, text_y), text, font=font, fill="black")
 
 # Save the image to a file
-image.save("logo.png")
+print("Example #38: Writing logo.png!")
+image.save(os.path.join("img", "logo.png"))
