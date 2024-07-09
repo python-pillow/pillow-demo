@@ -701,7 +701,16 @@ snorkle_3.jpg
 <code>
 >>> im = Image.open(os.path.join("img", "alex-pillow.jpg"))
 <span class="fragment">>>> print(im.info)</span>
-<span class="fragment"></span>
+<span class="fragment">{'icc_profile': b'\x00\x00…'
+                …
+                b'\x00\x00…',
+ 'jfif': 257,
+ 'jfif_density': (1, 1),
+ 'jfif_unit': 0,
+ 'jfif_version': (1, 1),
+ 'progression': 1,
+ 'progressive': 1}
+</span>
 </code>
 </pre>
             </section>
