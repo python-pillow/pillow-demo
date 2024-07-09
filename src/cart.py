@@ -43,5 +43,5 @@ draw.text((width - 100, height - 15), "(0, 0) to (400, 300)", fill="blue", font=
 draw.text((310, 200), "(300, 200)", fill="black", font=font)
 
 # Save and display the image
-print("t")
+print("Example #34: Writing coordinate_system_example.png!")
 image.save(os.path.join("img", "coordinate_system_example.png"))
