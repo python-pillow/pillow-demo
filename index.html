@@ -536,7 +536,7 @@ def roll(im, delta):
             </section>
             <section>
                 <h3>More on reading images</h3>
-                <p class="fragment">Batch processing</p>
+                <p class="fragment">Example #29: Batch processing</p>
                 <pre class="fragment">
 <code>
 >>> import glob
@@ -556,7 +556,7 @@ def roll(im, delta):
             </section>
             <section>
                 <h3>More on reading images</h3>
-                <p class="fragment">Batch processing with pathlib</p>
+                <p class="fragment">Example #29: Batch processing with pathlib</p>
                 <pre class="fragment">
 <code>
 >>> from pathlib import Path
@@ -576,7 +576,7 @@ def roll(im, delta):
             </section>
             <section>
                 <h3>Controlling the decoder</h3>
-                <p class="fragment">Reading in draft mode</p>
+                <p class="fragment">Example #30: Reading in draft mode</p>
                 <pre class="fragment">
 <code>
 >>> with Image.open("hopper.jpg") as im:
@@ -615,12 +615,23 @@ def roll(im, delta):
             </section>
             <section>
                 <h3>Concepts</h3>
-                <p class="fragment">Bands</p>
+                <p class="fragment">Example #31: Bands</p>
                 <pre class="fragment">
 <code>
 >>> im = Image.open(os.path.join("img", "hopper.ppm"))
 <span class="fragment">>>> print(im.getbands())</span>
 <span class="fragment">('R', 'G', 'B')</span>
+</code>
+</pre>
+            </section>
+            <section>
+                <h3>Concepts</h3>
+                <p class="fragment">Example #32: Modes</p>
+                <pre class="fragment">
+<code>
+>>> im = Image.open(os.path.join("img", "hopper.ppm"))
+<span class="fragment">>>> print(im.mode)</span>
+<span class="fragment">RGB</span>
 </code>
 </pre>
             </section>
