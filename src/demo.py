@@ -511,7 +511,6 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#transparency
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
-print("Example #37: Writing transparent image!")
 import alpha
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
