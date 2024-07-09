@@ -489,7 +489,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
-print("Example #33: Get hopper info!")
+print("Example #36: Get hopper info!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.info)
 console.print(Rule())
@@ -500,8 +500,18 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
-print("Example #33: Get alex-pillow info!")
+print("Example #36: Get alex-pillow info!")
 im = Image.open(os.path.join("img", "alex-pillow.jpg"))
 pprint(im.info)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #37
+# https://pillow.readthedocs.io/en/stable/handbook/concepts.html#transparency
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
+print("Example #37: Writing transparent image!")
+import alpha
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
