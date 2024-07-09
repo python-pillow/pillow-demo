@@ -615,9 +615,14 @@ def roll(im, delta):
             </section>
             <section>
                 <h3>Concepts</h3>
-                <p class="fragment"></p>
+                <p class="fragment">Bands</p>
                 <pre class="fragment">
-                </pre>
+<code>
+>>> im = Image.open(os.path.join("img", "hopper.ppm"))
+<span class="fragment">>>> print(im.getbands())</span>
+<span class="fragment">('R', 'G', 'B')</span>
+</code>
+</pre>
             </section>
             <section>
                 <h4>Thank you!</h4>
