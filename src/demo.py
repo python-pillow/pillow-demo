@@ -480,7 +480,8 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #35
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#palette
 # ===============================================================================
-console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #35[/bold magenta]"))
+import pal
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
 
@@ -488,7 +489,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #36
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
 # ===============================================================================
-console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
 print("Example #33: Get hopper info!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.info)
@@ -499,7 +500,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # Example #36
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
 # ===============================================================================
-console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
 print("Example #33: Get alex-pillow info!")
 im = Image.open(os.path.join("img", "alex-pillow.jpg"))
 pprint(im.info)
