@@ -539,6 +539,8 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://github.com/python-pillow/pillow-demo/blob/main/src/logo.py
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #40[/bold magenta]"))
+import logo  # noqa
+
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
 
@@ -547,5 +549,7 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://github.com/python-pillow/pillow-demo/blob/main/src/logo_fancy.py
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #41[/bold magenta]"))
+import logo_fancy  # noqa
+
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
