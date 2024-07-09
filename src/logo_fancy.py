@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 
 # Function to create a gradient background
@@ -51,4 +52,4 @@ subtitle_x, subtitle_y = text_x, text_y + 60
 draw.text((subtitle_x, subtitle_y), subtitle, font=font_bold, fill="darkred")
 
 # Save the image to a file
-image.save("logo_fancy.png")
+image.save(os.path.join("img", "logo_fancy.png"))
