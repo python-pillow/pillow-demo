@@ -553,3 +553,11 @@ import logo_fancy  # noqa
 
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #42
+# https://github.com/python-pillow/Pillow/issues/1888
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #42[/bold magenta]"))
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
