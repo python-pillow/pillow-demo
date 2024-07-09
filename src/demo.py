@@ -481,7 +481,6 @@ code.interact(local=globals(), readfunc=readfunc)
 # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#palette
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #35[/bold magenta]"))
-import pal
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
 
