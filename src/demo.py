@@ -7,6 +7,7 @@ from roll import roll
 from batch import compress_image
 from buffer import read_image_from_buffer, read_image_to_buffer
 from pathlib import Path
+from pprint import pprint
 import glob
 import os
 import readline
@@ -475,5 +476,16 @@ console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
 print("Example #33: Get hopper info!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.info)
+console.print(Rule())
+code.interact(local=globals(), readfunc=readfunc)
+
+# ===============================================================================
+# Example #34
+# https://pillow.readthedocs.io/en/stable/handbook/concepts.html#info
+# ===============================================================================
+console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
+print("Example #33: Get alex-pillow info!")
+im = Image.open(os.path.join("img", "alex-pillow.jpg"))
+pprint(im.info)
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc)
