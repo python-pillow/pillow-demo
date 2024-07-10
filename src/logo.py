@@ -10,7 +10,9 @@ draw = ImageDraw.Draw(image)
 try:
     font = ImageFont.truetype("Arial.ttf", 40)  # macos
 except OSError:
-    font = ImageFont.truetype("/usr/share/fonts/liberation-mono/LiberationMono-Regular.ttf")  # linux
+    font = ImageFont.truetype(
+        "/usr/share/fonts/liberation-mono/LiberationMono-Regular.ttf"
+    )  # linux
 
 # Draw a rectangle (as a placeholder for a logo icon)
 rectangle_width, rectangle_height = 100, 100
