@@ -7,7 +7,10 @@ image = Image.new("RGB", (width, height), "white")
 draw = ImageDraw.Draw(image)
 
 # Define the font and size
-font = ImageFont.truetype("Arial.ttf", 40)
+try:
+    font = ImageFont.truetype("Arial.ttf", 40)  # macos
+except OSError:
+    font = ImageFont.truetype("/usr/share/fonts/liberation-mono/LiberationMono-Regular.ttf")  # linux
 
 # Draw a rectangle (as a placeholder for a logo icon)
 rectangle_width, rectangle_height = 100, 100
