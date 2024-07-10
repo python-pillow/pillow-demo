@@ -37,7 +37,10 @@ draw.ellipse(
 )
 
 # Define the font and size
-font_path = "Arial.ttf"  # Update with the path to a .ttf font file on your system
+try:
+    font_path = "Arial.ttf"  # macos
+except OSError:
+    font_path = "/usr/share/fonts/liberation-mono/LiberationMono-Regular.ttf"  # linux
 font = ImageFont.truetype(font_path, 50)
 font_bold = ImageFont.truetype(font_path, 70)
 
@@ -52,4 +55,5 @@ subtitle_x, subtitle_y = text_x, text_y + 60
 draw.text((subtitle_x, subtitle_y), subtitle, font=font_bold, fill="darkred")
 
 # Save the image to a file
+print("Example #39: Writing logo_fancy.png!")
 image.save(os.path.join("img", "logo_fancy.png"))
