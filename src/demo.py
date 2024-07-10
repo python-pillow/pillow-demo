@@ -15,12 +15,13 @@ import rlcompleter  # noqa
 
 console = Console()
 readfunc = readline.parse_and_bind("tab: complete")
+banner = ""
 
 # ===============================================================================
 # Example #0 Welcome!
 # ===============================================================================
 console.print(Rule("[bold magenta]Welcome![/bold magenta]"))
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #1 Open image and print info
@@ -30,7 +31,7 @@ console.print(Rule("[bold magenta]Example #1[/bold magenta]"))
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.format, im.size, im.mode)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #2 Rotate image 90 degrees clockwise (270 degrees counter clockwise)
@@ -40,7 +41,7 @@ im = im.rotate(270)
 im.save(os.path.join("img", "rotated_hopper.jpg"))
 print("Example #2: Saved rotated hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #3 Convert to jpeg
@@ -51,7 +52,7 @@ im = Image.open(os.path.join("img", "hopper.ppm"))
 im.save(os.path.join("img", "hopper.jpg"))
 print("Example #3: Saved jpeg hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #4 Create JPEG thumbnail
@@ -63,7 +64,7 @@ im.thumbnail([64, 64])
 im.save(os.path.join("img", "thumbnail_hopper.jpg"))
 print("Example #4: Saved thumbnail hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #5 Crop image
@@ -74,7 +75,7 @@ region = im.crop([0, 0, 64, 64])
 region.save(os.path.join("img", "cropped_hopper.jpg"))
 print("Example #5: Saved cropped hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #6 Pasting image
@@ -87,7 +88,7 @@ im.paste(region, (0, 0, 64, 64))
 im.save(os.path.join("img", "pasted_hopper.jpg"))
 print("Example #6: Saved pasted hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #7 Roll image
@@ -98,7 +99,7 @@ im = roll(im, 64)
 im.save(os.path.join("img", "rolled_hopper.jpg"))
 print("Example #7: Saved rolled hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #8 Merging images
@@ -110,7 +111,7 @@ im = merge(im, alex)
 im.save(os.path.join("img", "merged_hopper.png"))
 print("Example #8: Saved merged hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #8 Merging images (and resize)
@@ -125,7 +126,7 @@ im = im.resize([128, 128])
 im.save(os.path.join("img", "merged_resized_hopper.png"))
 print("Example #8: Saved merged and resized hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #9 Split and merge bands
@@ -137,7 +138,7 @@ im = Image.merge("RGB", (b, g, r))
 im.save(os.path.join("img", "rebanded_hopper.jpg"))
 print("Example #9: Saved rebanded hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #10 Create JPEG thumbnail with resize
@@ -149,7 +150,7 @@ im = im.resize([64, 64])
 im.save(os.path.join("img", "resized_hopper.jpg"))
 print("Example #10: Saved resized hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #11 Transpose image left to right
@@ -161,7 +162,7 @@ im = im.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
 im.save(os.path.join("img", "flip_left_right_hopper.jpg"))
 print("Example #11: Saved flipped hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #12 Transpose image top to bottom
@@ -173,7 +174,7 @@ im = im.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
 im.save(os.path.join("img", "flip_top_bottom_hopper.jpg"))
 print("Example #12: Saved flipped hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #13 Rotate image 90 degrees with transpose
@@ -185,7 +186,7 @@ im = im.transpose(Image.Transpose.ROTATE_90)
 im.save(os.path.join("img", "rotated_hopper_90.jpg"))
 print("Example #13: Saved rotated hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #14 Rotate image 180 degrees with transpose
@@ -197,7 +198,7 @@ im = im.transpose(Image.Transpose.ROTATE_180)
 im.save(os.path.join("img", "rotated_hopper_180.jpg"))
 print("Example #14: Saved rotated hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #15 Rotate image 270 degrees with transpose
@@ -209,7 +210,7 @@ im = im.transpose(Image.Transpose.ROTATE_270)
 im.save(os.path.join("img", "rotated_hopper_270.jpg"))
 print("Example #15: Saved rotated hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #16 Relative resize image with contain
@@ -220,7 +221,7 @@ im = Image.open(os.path.join("img", "hopper.ppm"))
 ImageOps.contain(im, (100, 150)).save(os.path.join("img", "contained_hopper.png"))
 print("Example #16: Saved contained hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #17 Relative resize image with cover
@@ -231,7 +232,7 @@ im = Image.open(os.path.join("img", "hopper.ppm"))
 ImageOps.cover(im, (100, 150)).save(os.path.join("img", "covered_hopper.png"))
 print("Example #17: Saved covered hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #18 Relative resize image with fit
@@ -242,7 +243,7 @@ im = Image.open(os.path.join("img", "hopper.ppm"))
 ImageOps.fit(im, (100, 150)).save(os.path.join("img", "fitted_hopper.png"))
 print("Example #18: Saved fitted hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #19 Relative resize image with pad
@@ -255,7 +256,7 @@ ImageOps.pad(im, (100, 150), color="#f00").save(
 )
 print("Example #19: Saved padded hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #20 Convert mode
@@ -267,7 +268,7 @@ im = im.convert("L")
 im.save(os.path.join("img", "converted_hopper.jpg"))
 print("Example #20: Saved converted hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #21 Image enhancement
@@ -279,7 +280,7 @@ im = im.filter(ImageFilter.DETAIL)
 im.save(os.path.join("img", "enhanced_hopper.jpg"))
 print("Example #21: Saved enhanced hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #22 Point operations
@@ -291,7 +292,7 @@ im = im.point(lambda i: i * 20)
 im.save(os.path.join("img", "transformed_hopper.jpg"))
 print("Example #22: Saved transformed hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #23 Process bands
@@ -313,7 +314,7 @@ im = Image.merge(im.mode, source)
 im.save(os.path.join("img", "masked_hopper.jpg"))
 print("Example #23: Saved masked hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #24 Enhance image
@@ -326,7 +327,7 @@ im = im.enhance(1.3)
 im.save(os.path.join("img", "contrasted_hopper.jpg"))
 print("Example #24: Saved contrasted hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #25 Image sequences
@@ -342,7 +343,7 @@ for frame in ImageSequence.Iterator(im):
     i += 1
 print("Example #25: Saved all frames.")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #26 Print postscript
@@ -360,7 +361,7 @@ ps.text((0, 0), title)
 ps.end_document()
 print("Example #26: Saved postscript hopper!")
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #27 Reading from an open file
@@ -372,7 +373,7 @@ with open(os.path.join("img", "hopper.ppm"), "rb") as fp:
     im = Image.open(fp)
     print(im)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #28 Reading from binary data
@@ -383,14 +384,14 @@ buffer = read_image_to_buffer(os.path.join("img", "hopper.ppm"))
 print("Example #28: Read to buffer")
 print(type(buffer))
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 console.print(Rule("[bold magenta]Example #28[/bold magenta]"))
 im = read_image_from_buffer(buffer)
 print("Example #28: Read from buffer")
 print(im)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #29 Batch processing
@@ -407,7 +408,7 @@ for path in paths:
     print(image)
     compress_image(path, image)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #29 Batch processing
@@ -420,7 +421,7 @@ for path in paths:
     print(image)
     compress_image(path, image)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #30
@@ -433,7 +434,7 @@ with Image.open(os.path.join("img", "hopper.jpg")) as im:
     im.draft("L", (100, 100))
     print("draft =", im.mode, im.size)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #31
@@ -444,7 +445,7 @@ print("Example #31: Get hopper bands!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.getbands())
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #32
@@ -455,7 +456,7 @@ print("Example #32: Get hopper modes!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.mode)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #33
@@ -466,7 +467,7 @@ print("Example #33: Get hopper size!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.size)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #34
@@ -476,7 +477,7 @@ console.print(Rule("[bold magenta]Example #34[/bold magenta]"))
 import cart  # noqa
 
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #35
@@ -486,7 +487,7 @@ console.print(Rule("[bold magenta]Example #35[/bold magenta]"))
 import pal  # noqa
 
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #36
@@ -497,7 +498,7 @@ print("Example #36: Get hopper info!")
 im = Image.open(os.path.join("img", "hopper.ppm"))
 print(im.info)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #36
@@ -508,7 +509,7 @@ print("Example #36: Get alex-pillow info!")
 im = Image.open(os.path.join("img", "alex-pillow.jpg"))
 pprint(im.info)
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #37
@@ -518,21 +519,21 @@ console.print(Rule("[bold magenta]Example #36[/bold magenta]"))
 import alpha  # noqa
 
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #38
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #38[/bold magenta]"))
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #39
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #39[/bold magenta]"))
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #40
@@ -542,7 +543,7 @@ console.print(Rule("[bold magenta]Example #40[/bold magenta]"))
 import logo  # noqa
 
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #41
@@ -552,7 +553,7 @@ console.print(Rule("[bold magenta]Example #41[/bold magenta]"))
 import logo_fancy  # noqa
 
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
 
 # ===============================================================================
 # Example #42
@@ -560,4 +561,4 @@ code.interact(local=globals(), readfunc=readfunc)
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #42[/bold magenta]"))
 console.print(Rule())
-code.interact(local=globals(), readfunc=readfunc)
+code.interact(local=globals(), readfunc=readfunc, banner=banner)
