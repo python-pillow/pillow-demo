@@ -39,10 +39,12 @@ draw.ellipse(
 # Define the font and size
 try:
     font_path = "Arial.ttf"  # macos
+    font = ImageFont.truetype(font_path, 50)
+    font_bold = ImageFont.truetype(font_path, 70)
 except OSError:
     font_path = "/usr/share/fonts/liberation-mono/LiberationMono-Regular.ttf"  # linux
-font = ImageFont.truetype(font_path, 50)
-font_bold = ImageFont.truetype(font_path, 70)
+    font = ImageFont.truetype(font_path, 50)
+    font_bold = ImageFont.truetype(font_path, 70)
 
 # Add styled text next to the circle
 text = "Pillow Demo"
