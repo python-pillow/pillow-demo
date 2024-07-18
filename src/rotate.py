@@ -14,7 +14,7 @@ images = [Image.open(filename) for filename in image_filenames]
 
 # Save the images as an animated GIF
 images[0].save(
-    "animated_hopper.gif",
+    os.path.join("img", "animated_hopper.gif"),
     save_all=True,
     append_images=images[1:],
     duration=500,  # duration of each frame in milliseconds
