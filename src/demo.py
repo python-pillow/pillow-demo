@@ -350,15 +350,7 @@ code.interact(local=globals(), readfunc=readfunc, banner=banner)
 # https://pillow.readthedocs.io/en/stable/handbook/tutorial.html#postscript-printing
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #26[/bold magenta]"))
-im = Image.open(os.path.join("img", "hopper.ppm"))
-title = "hopper"
-fp = open("postscript_hopper.ps", "wb")
-ps = PSDraw.PSDraw(fp)
-ps.begin_document(title)
-ps.image((0, 0, 128, 128), im, 0)
-ps.setfont("HelveticaNarrow-Bold", 36)
-ps.text((0, 0), title)
-ps.end_document()
+import ps  # noqa
 print("Example #26: Saved postscript hopper!")
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc, banner=banner)
