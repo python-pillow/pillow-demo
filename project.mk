@@ -1,5 +1,5 @@
 PROJECT_NAME := pillow-demo
-GIT_MESSAGE := "Prep for Austin Py"
+GIT_MESSAGE := "Update demo"
 
 edit:
 	vi index.html
