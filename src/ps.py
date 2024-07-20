@@ -1,7 +1,8 @@
 from PIL import Image, PSDraw
+import os
 
 # Define the PostScript file
-ps_file = open("output.ps", "wb")
+ps_file = open("hopper.ps", "wb")
 
 # Create a PSDraw object
 ps = PSDraw.PSDraw(ps_file)
@@ -27,7 +28,7 @@ text_x = (page_width - text_width) // 2
 text_y = page_height - text_height - 50  # Distance from the top of the page
 
 # Load the image
-image_path = "img/hopper.ppm"  # Update this with your image path
+image_path = os.path.join("img", "hopper.ppm")  # Update this with your image path
 with Image.open(image_path) as im:
     # Resize the image if it's too large
     im.thumbnail((page_width - 100, page_height // 2))
@@ -47,3 +48,24 @@ ps.text((text_x, text_y), text)
 # End the document
 ps.end_document()
 ps_file.close()
+
+
+#from PIL import Image, PSDraw
+#import os
+#
+#with Image.open(os.path.join("img", "hopper.ppm")) as im:
+#    title = "hopper"
+#    box = (1 * 72, 2 * 72, 7 * 72, 10 * 72)  # in points
+#
+#    ps = PSDraw.PSDraw(open("hopper.ps", "wb"))  # default is sys.stdout or sys.stdout.buffer
+#    ps.begin_document(title)
+#
+#    # draw the image (75 dpi)
+#    ps.image(box, im, 75)
+#    ps.rectangle(box)
+#
+#    # draw title
+#    ps.setfont("HelveticaNarrow-Bold", 36)
+#    ps.text((3 * 72, 4 * 72), title)
+#
+#    ps.end_document()
