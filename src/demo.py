@@ -1,4 +1,4 @@
-from PIL import Image, ImageOps, ImageFilter, ImageEnhance, ImageSequence, PSDraw
+from PIL import Image, ImageOps, ImageFilter, ImageEnhance, ImageSequence
 import code
 from rich.console import Console
 from rich.rule import Rule
@@ -351,6 +351,7 @@ code.interact(local=globals(), readfunc=readfunc, banner=banner)
 # ===============================================================================
 console.print(Rule("[bold magenta]Example #26[/bold magenta]"))
 import ps  # noqa
+
 print("Example #26: Saved postscript hopper!")
 console.print(Rule())
 code.interact(local=globals(), readfunc=readfunc, banner=banner)

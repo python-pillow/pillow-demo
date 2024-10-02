@@ -50,10 +50,10 @@ ps.end_document()
 ps_file.close()
 
 
-#from PIL import Image, PSDraw
-#import os
+# from PIL import Image, PSDraw
+# import os
 #
-#with Image.open(os.path.join("img", "hopper.ppm")) as im:
+# with Image.open(os.path.join("img", "hopper.ppm")) as im:
 #    title = "hopper"
 #    box = (1 * 72, 2 * 72, 7 * 72, 10 * 72)  # in points
 #

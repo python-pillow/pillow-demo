@@ -12,7 +12,7 @@ def replace_palette_with_random_colors(image_path):
     img = img.convert("P", palette=Image.ADAPTIVE, colors=256)  # Convert to 'P' mode
 
     # Get the palette
-    palette = img.getpalette()
+    # palette = img.getpalette()
 
     # Generate random colors
     new_palette = []
